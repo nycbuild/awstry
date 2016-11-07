@@ -1,4 +1,4 @@
-directory "/srv/www1/" do
+directory "/srv/www3/" do
   mode 0755
   owner 'root'
   group 'root'
