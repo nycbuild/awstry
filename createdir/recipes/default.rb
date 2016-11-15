@@ -5,3 +5,12 @@ directory "/srv/www3/" do
   action :create
 end
 
+directory "/home/realntwk/deployment-scripts" do
+  mode 0755
+  owner 'realntwk'
+  group 'real'
+  recursive true
+  action :create
+end
+
+
