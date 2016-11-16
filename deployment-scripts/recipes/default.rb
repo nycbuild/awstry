@@ -11,3 +11,9 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-requestserver.sh" do
   mode 0744
   action :create_if_missing
 end
+
+cookbook_file "/home/realntwk/deployment-scripts/deploy-jenkins.sh" do
+  source "deploy-jenkins.sh"
+  mode 0744
+  action :create_if_missing
+end

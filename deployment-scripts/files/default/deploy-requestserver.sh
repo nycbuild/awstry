@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-cp /home/realntwk/deployment-packages/sms.war /home/realntwk/tomcat/current/webapp/
+cp /home/realntwk/deployment-packages/sms.war /home/realntwk/tomcat/webapp/
 
-cd /home/realntwk/tomcat/current/bin
+cd /home/realntwk/tomcat/bin
 
 ./shutdown.sh
-./startuo.sh
+./startup.sh
 
