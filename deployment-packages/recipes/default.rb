@@ -1,5 +1,5 @@
 directory "/home/realntwk/deployment-packages" do
-  mode 0755
+  mode 0750
   owner 'realntwk'
   group 'real'
   recursive true
