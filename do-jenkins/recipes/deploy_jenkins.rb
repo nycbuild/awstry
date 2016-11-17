@@ -1,7 +1,14 @@
 include_recipe 'deploy'
 
-deploy 'jenkins' do
-  user 'realntwk'
-  deploy_to '/home/realntwk/tmp/'
-  action :deploy
+node[:deploy].each do |application, deploy|
+  opsworks_deploy_dir do
+    user 'realntwk'
+    group 'real'
+    path '/home/realntwk/tmp/'
+  end
+
+  opsworks_deploy do
+    deploy_data deploy
+    app application
+  end
 end
