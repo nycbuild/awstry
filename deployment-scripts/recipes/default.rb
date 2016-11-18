@@ -29,3 +29,11 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-jenkins.sh" do
   group 'real'
   action :create_if_missing
 end
+
+cookbook_file "/home/realntwk/deployment-scripts/deploy-post-requestserver.sh" do
+  source "deploy-post-requestserver.sh"
+  mode 0744
+  owner 'realntwk'
+  group 'real'
+  action :create_if_missing
+end
