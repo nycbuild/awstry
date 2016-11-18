@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ln -s /srv/www/jenkins/current /home/realntwk/tomcat/webapps/jenkins
+ln -s /srv/www/sms/current /home/realntwk/tomcat/webapps/sms
 
 cd /home/realntwk/tomcat/bin
 
