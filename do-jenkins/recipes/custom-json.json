@@ -1,0 +1,10 @@
+{
+  "opsworks" : {
+    "deploy_user" : {
+       "user" : "realntwk",
+       "group" : "real"
+    }
+  }
+}
+
+
