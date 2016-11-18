@@ -9,11 +9,10 @@
 include_recipe 'deploy'
 
 node[:deploy].each do |application, deploy|
-	deploy 'jenkins' do
-  		user 'realntwk'
-  		deploy_to '/home/realntwk/tmp'
-  		action :deploy
-	end
+  opsworks_deploy '/home/realntwk/tmp' do
+    deploy_data deploy
+    app application
+  end
 end
 
 
