@@ -15,11 +15,11 @@ node[:deploy].each do |application, deploy|
   end
 end
 
-execute "deploy-post-jenkins" do
-  user "realntwk"
-  cwd "/home/realntwk/deployment-scripts"
-  command "./deploy-post-jenkins.sh"
-end
+#execute "deploy-post-jenkins" do
+#  user "realntwk"
+#  cwd "/home/realntwk/deployment-scripts"
+#  command "./deploy-post-jenkins.sh"
+#end
 
 
 #
