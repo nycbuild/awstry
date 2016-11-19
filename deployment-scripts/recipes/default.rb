@@ -11,7 +11,7 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-jenkins.sh" do
   mode 0744
   owner 'realntwk'
   group 'real'
-  action :create_if_missing
+  action :create
 end
 
 cookbook_file "/home/realntwk/deployment-scripts/deploy-post-jenkins.sh" do
@@ -19,7 +19,7 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-jenkins.sh" do
   mode 0744
   owner 'realntwk'
   group 'real'
-  action :create_if_missing
+  action :create
 end
 
 cookbook_file "/home/realntwk/deployment-scripts/deploy-post-requestserver.sh" do
@@ -27,5 +27,5 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-requestserver.sh" d
   mode 0744
   owner 'realntwk'
   group 'real'
-  action :create_if_missing
+  action :create
 end
