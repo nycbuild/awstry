@@ -13,6 +13,8 @@ node[:deploy].each do |application, deploy|
     app application
   end
 
+	Chef::Log.debug("!!!!! Deploy application *** #{application} *** with type #{deploy[:application_type]}")
+	
 	case application
 	when 'jenkins'
 		execute "deploy-post-jenkins" do
