@@ -22,8 +22,8 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-jenkins.sh" do
   action :create
 end
 
-cookbook_file "/home/realntwk/deployment-scripts/deploy-post-requestserver.sh" do
-  source "deploy-post-requestserver.sh"
+cookbook_file "/home/realntwk/deployment-scripts/deploy-post-sms.sh" do
+  source "deploy-post-sms.sh"
   mode 0744
   owner 'realntwk'
   group 'real'
