@@ -62,6 +62,14 @@ cookbook_file "/home/realntwk/deployment-scripts/conf/sms/sms.xml" do
   action :create
 end
 
+directory "/home/realntwk/deployment-scripts/conf/ROOT" do
+  mode 0750
+  owner 'realntwk'
+  group 'real'
+  recursive true
+  action :create
+end
+
 cookbook_file "/home/realntwk/deployment-scripts/conf/ROOT/server.xml" do
   source "conf/ROOT/server.xml"
   mode 0744
