@@ -29,3 +29,19 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-sms.sh" do
   group 'real'
   action :create
 end
+
+cookbook_file "/home/realntwk/deployment-scripts/conf/sms/server.xml" do
+  source "conf/sms/server.xml"
+  mode 0744
+  owner 'realntwk'
+  group 'real'
+  action :create
+end
+
+cookbook_file "/home/realntwk/deployment-scripts/conf/sms/sms.xml" do
+  source "conf/sms/sms.xml"
+  mode 0744
+  owner 'realntwk'
+  group 'real'
+  action :create
+end

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context override="true">
+	  <ResourceLink
+	    name="jdbc/requestserver"
+	    global="jdbc/db"
+	    type="javax.sql.DataSource"
+	  />
+
+	<Parameter name="nodeIdDaemonSleepPeriod" value="300000" override="false"/>
+
+	<!-- Redis context init params -->
+	<Parameter name="scheduledBatchesSleepPeriod" value="30000" override="false"/>
+	<Parameter name="scheduledBatchesMaxBatchesPerTry" value="5" override="false"/>
+	<Parameter name="maximumMessageSize" value="4000" override="false"/>
+	<Parameter name="redisqServiceHost" value="qa-redis-group.ezmyzc.ng.0001.use1.cache.amazonaws.com:6379" override="false"/>
+	<Parameter name="maximumRetries" value="3" override="false"/>
+	<Parameter name="nlsAuthToken" value="Z3e6WOjdmU0g1DHHO9jLnNTP483I" override="false"/>
+	<Parameter name="nlsHost" value="api.mblox.com" override="false"/>
+	<Parameter name="nlsPath" value="/nls/v1/lookups" override="false"/>
+        <Parameter name="localSqlLoader" value="false" override="false"/>
+
+        <Parameter name="apiMessagesQueue" value="ApiMessages" override="false"/>
+        <Parameter name="nonApiMessagesQueue" value="NonApiMessages" override="false"/>
+
+        <Parameter name="ignoreStartupErrors" value= "true" />
+
+
+        <!--  API context init params -->
+	<Parameter name="com.ott.aws.admin.email" value="admin@aws.amazon.com" />
+	<Parameter name="com.ott.aws.billing.country" value="USA" />
+   	<Parameter name="com.ott.rest.default.page.size" value="100" />
+   	<Parameter name="com.ott.rest.default.deliverability.threshold" value="10" />
+
+        <!-- <Parameter name="nis.proxy_host" value="10.11.0.76"/> --> 
+        <!-- <Parameter name="nis.proxy_port" value="8888"/> -->
+
+	<!--Parameter name="nis.url" value="https://idp.syniverse.com/nis/numberIdentity/v1"/ -->
+	<Parameter name="nis.url" value="http://10.11.0.121:9090/nis/numberIdentity/v1"/>
+        <Parameter name="nis.user" value="1015"/>
+        <Parameter name="nis.password" value="Xv4^Fo8*"/>
+
+        <Parameter name="hibernate.cache" value="false" /> 
+       
+         
+        <Parameter name="com.ott.aws.lookup.threadpool.size" value="5" />
+    
+        <!-- Amazon SNS -->
+        <Parameter name="awsSnsAccessKey" value= "AKIAIG54H2VNXHJ2BEIQ"/>
+        <Parameter name="awsSnsSecretKey" value= "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"/>
+        <Parameter name="asyncFeedbackTopicArn" value= "arn:aws:sns:us-east-1:043363905272:MessageStatus"/>
+        <Parameter name="snsThreads" value= "5" />
+        <Parameter name="snsBatchSize" value= "100" />
+
+
+ 
+        <!-- SNS Retry --> 
+        <Parameter name="publishMaxAttemps" value= "5"/>
+        <Parameter name="publishInitialInterval" value= "2"/>
+        <Parameter name="publishMultiplier" value= "2"/> 
+   
+        <!-- Monitoring -->
+        <Parameter name="monitoringSamplePeriodLength" value = "10" />
+        <Parameter name="monitoringRestUri" value= "http://10.11.2.130:8080" />
+
+
+</Context>
