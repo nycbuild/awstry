@@ -23,7 +23,12 @@ node[:deploy].each do |application, deploy|
 			command "./deploy-post-jenkins.sh"
 		end
 		
-	when 'requestserver'
+	when 'sms'
+		execute "deploy-post-sms" do
+			user "realntwk"
+			cwd "/home/realntwk/deployment-scripts"
+			command "./deploy-post-sms.sh"
+		end
 	
 	else
 	
