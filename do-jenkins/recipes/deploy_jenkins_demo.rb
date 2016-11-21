@@ -13,10 +13,18 @@ node[:deploy].each do |application, deploy|
     app application
   end
 
-	execute "deploy-post-jenkins" do
-		user "realntwk"
-		cwd "/home/realntwk/deployment-scripts"
-		command "./deploy-post-jenkins.sh"
+	case application
+	when 'jenkins'
+		execute "deploy-post-jenkins" do
+			user "realntwk"
+			cwd "/home/realntwk/deployment-scripts"
+			command "./deploy-post-jenkins.sh"
+		end
+		
+	when 'requestserver'
+	
+	else
+	
 	end
 
 end
