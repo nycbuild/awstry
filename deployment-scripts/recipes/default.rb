@@ -30,6 +30,14 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-sms.sh" do
   action :create
 end
 
+directory "/home/realntwk/deployment-scripts/conf/sms" do
+  mode 0750
+  owner 'realntwk'
+  group 'real'
+  recursive true
+  action :create
+end
+
 cookbook_file "/home/realntwk/deployment-scripts/conf/sms/server.xml" do
   source "conf/sms/server.xml"
   mode 0744
