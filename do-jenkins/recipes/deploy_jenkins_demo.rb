@@ -30,6 +30,13 @@ node[:deploy].each do |application, deploy|
 			command "./deploy-post-sms.sh"
 		end
 	
+	when 'ROOT'
+		execute "deploy-post-ROOT" do
+			user "realntwk"
+			cwd "/home/realntwk/deployment-scripts"
+			command "./deploy-post-ROOT.sh"
+		end
+	
 	else
 	
 	end

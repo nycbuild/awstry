@@ -30,6 +30,14 @@ cookbook_file "/home/realntwk/deployment-scripts/deploy-post-sms.sh" do
   action :create
 end
 
+cookbook_file "/home/realntwk/deployment-scripts/deploy-post-ROOT.sh" do
+  source "deploy-post-ROOT.sh"
+  mode 0744
+  owner 'realntwk'
+  group 'real'
+  action :create
+end
+
 directory "/home/realntwk/deployment-scripts/conf/sms" do
   mode 0750
   owner 'realntwk'
