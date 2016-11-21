@@ -61,3 +61,19 @@ cookbook_file "/home/realntwk/deployment-scripts/conf/sms/sms.xml" do
   group 'real'
   action :create
 end
+
+cookbook_file "/home/realntwk/deployment-scripts/conf/ROOT/server.xml" do
+  source "conf/ROOT/server.xml"
+  mode 0744
+  owner 'realntwk'
+  group 'real'
+  action :create
+end
+
+cookbook_file "/home/realntwk/deployment-scripts/conf/ROOT/ROOT.xml" do
+  source "conf/ROOT/ROOT.xml"
+  mode 0744
+  owner 'realntwk'
+  group 'real'
+  action :create
+end

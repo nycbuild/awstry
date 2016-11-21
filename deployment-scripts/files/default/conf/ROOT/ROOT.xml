@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+	<ResourceLink 
+	  name="jdbc/ui" 
+	  global="jdbc/db" 
+	  type="javax.sql.DataSource" 
+	 />
+	<Parameter name="requestserver.url" value="http://10.11.0.121:8080/sms/" override="false" />
+	<Parameter name="resetPasswordTemplateId" value="13" />
+	<Parameter name="timerToCheckRequestserverDB" value="2" />
+
+</Context> 
