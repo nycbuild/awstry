@@ -8,8 +8,8 @@
   end
 end
 
-cookbook_file "/home/realntwk/deployment-scripts//scripts/requestserver/deploy-post-requestserver.sh" do
-  source "/scripts/requestserver/deploy-post-requestserver.sh"
+cookbook_file "/home/realntwk/deployment-scripts/scripts/requestserver/deploy-post-requestserver.sh" do
+  source "scripts/requestserver/deploy-post-requestserver.sh"
   mode 0744
   owner 'realntwk'
   group 'real'

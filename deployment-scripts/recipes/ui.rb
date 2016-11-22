@@ -8,8 +8,8 @@
   end
 end
 
-cookbook_file "/home/realntwk/deployment-scripts//scripts/ui/deploy-post-ui.sh" do
-  source "/scripts/sms/deploy-post-ui.sh"
+cookbook_file "/home/realntwk/deployment-scripts/scripts/ui/deploy-post-ui.sh" do
+  source "scripts/ui/deploy-post-ui.sh"
   mode 0744
   owner 'realntwk'
   group 'real'
