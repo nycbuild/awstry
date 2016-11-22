@@ -1,14 +1,9 @@
 package 'mysql-devel' do
-  package_name value_for_platform(
-    ['centos','redhat','fedora','amazon'] => {'default' => 'mysql-devel'},
-    'ubuntu' => {'default' => 'libmysqlclient-dev'}
-  )
+  package_name 'mysql-devel'
   action :install
 end
+
 package 'mysql-client' do
-  package_name value_for_platform(
-    ['centos','redhat','fedora','amazon'] => {'default' => 'mysql'},
-    'default' => 'mysql-client'
-  )
+  package_name 'mysql'
   action :install
 end
