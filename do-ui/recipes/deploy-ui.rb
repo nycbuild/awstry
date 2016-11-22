@@ -18,7 +18,7 @@ node[:deploy].each do |application, deploy|
 	case application
 		
 	when 'ROOT'
-		execute "deploy-post-requestserver" do
+		execute "deploy-post" do
 			user "realntwk"
 			cwd "/home/realntwk/deployment-scripts/scripts/ui"
 			command "./deploy-post-ui.sh"
