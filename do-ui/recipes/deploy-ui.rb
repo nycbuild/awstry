@@ -1,7 +1,5 @@
 include_recipe 'deploy'
 
-normal[:opsworks][:deploy_user][:user] = 'realntwk'
-
 node[:deploy].each do |application, deploy|
 
   opsworks_deploy_dir do
