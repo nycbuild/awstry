@@ -1,4 +1,8 @@
-%w[ /home/realntwk/deployment-scripts/scripts/ui /home/realntwk/deployment-scripts/conf/ui ].each do |path|
+%w[ /home/realntwk/deployment-scripts 
+	/home/realntwk/deployment-scripts/scripts 
+	/home/realntwk/deployment-scripts/conf 
+	/home/realntwk/deployment-scripts/scripts/ui 
+	/home/realntwk/deployment-scripts/conf/ui ].each do |path|
   directory path do
   	mode 0750
   	owner 'realntwk'
