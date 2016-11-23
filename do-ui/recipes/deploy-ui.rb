@@ -1,7 +1,6 @@
 include_recipe 'deploy'
 
-node.default[:opsworks][:deploy_user][:user] = 'realntwk'
-
+normal[:opsworks][:deploy_user][:user] = 'realntwk'
 
 node[:deploy].each do |application, deploy|
 
