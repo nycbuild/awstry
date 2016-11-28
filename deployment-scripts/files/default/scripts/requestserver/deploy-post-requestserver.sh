@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+
+cd /home/realntwk/tomcat/bin
 ./shutdown.sh
 
 rm -rf /home/realntwk/tomcat/webapps/sms
@@ -10,6 +12,5 @@ cp /home/realntwk/deployment-scripts/conf/requestserver/server.xml /home/realntw
 cp /home/realntwk/deployment-scripts/conf/requestserver/sms.xml /home/realntwk/tomcat/conf/Catalina/localhost/
 
 cd /home/realntwk/tomcat/bin
-
 ./startup.sh
 
