@@ -9,3 +9,4 @@
 # The following shows how to override the deploy user and shell:
 #
 normal[:opsworks][:deploy_user][:user] = 'realntwk'
+normal[:opsworks][:deploy_user][:group] = 'real'
