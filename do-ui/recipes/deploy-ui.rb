@@ -20,6 +20,7 @@ node[:deploy].each do |application, deploy|
 	when 'ROOT'
 		execute "deploy-post" do
 			user "realntwk"
+			group 'real'
 			cwd "/home/realntwk/deployment-scripts/scripts/ui"
 			command "./deploy-post-ui.sh"
 		end
