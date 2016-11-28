@@ -20,6 +20,7 @@ node[:deploy].each do |application, deploy|
 	when 'requestserver'
 		execute "deploy-post-requestserver" do
 			user "realntwk"
+			group 'real'
 			cwd "/home/realntwk/deployment-scripts/scripts/requestserver"
 			command "./deploy-post-requestserver.sh"
 		end
